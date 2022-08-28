@@ -1,11 +1,12 @@
-import 'package:cookbook/ui/widgets/recipe_card.dart';
 import 'package:flutter/material.dart';
+
 import 'package:cookbook/model/recipe.dart';
 import 'package:cookbook/utils/store.dart';
-
-//import 'package:cookbook/model/state.dart';
-//import 'package:cookbook/state_widget.dart';
+import 'package:cookbook/ui/widgets/recipe_card.dart';
+import 'package:cookbook/model/state.dart';
+import 'package:cookbook/state_widget.dart';
 import 'package:cookbook/ui/screens/login.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -49,7 +50,9 @@ class HomeScreenState extends State<HomeScreen> {
             elevation: 2.0,
             bottom: TabBar(
               labelColor: Colors.white,
-              tabs: [Tab(icon: Icon(Icons.restaurant, size: _iconSize))],
+              tabs: [
+                Tab(icon: Icon(Icons.restaurant, size: _iconSize))
+              ],
             ),
           ),
         ),
@@ -67,5 +70,6 @@ class HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
+  
   }
 }

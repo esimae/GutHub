@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'package:cookbook/ui/widgets/google_sign_in_button.dart'; 
+import 'package:cookbook/ui/widgets/google_sign_in_button.dart';
+import 'package:cookbook/state_widget.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     // Private methods within build method help us to
     // organize our code and recognize structure of widget
     // that we're building:
-    
-    // New private method which includes the background image:
     BoxDecoration _buildBackground() {
       return BoxDecoration(
         image: DecorationImage(
@@ -18,22 +22,16 @@ class LoginScreen extends StatelessWidget {
         ),
       );
     }
-    
+
     Text _buildText() {
       return Text(
         'GutHub',
-        style: TextStyle(
-            fontFamily: 'Merriweather',
-            fontSize: 45.0,
-            color: const Color(0xFF9D874E),
-          ),
+        style: Theme.of(context).textTheme.headline,
         textAlign: TextAlign.center,
       );
     }
 
     return Scaffold(
-      //backgroundColor: Colors.lightBlue,
-      // New container widget to wrap our center widget
       body: Container(
         decoration: _buildBackground(),
         child: Center(
@@ -41,14 +39,13 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               _buildText(),
-              // Space between "Recipes" and the button:
               SizedBox(height: 50.0),
               GoogleSignInButton(
-                onPressed: () =>
-                  Navigator.of(context).pushReplacementNamed('/'),
+                // Passing function callback as constructor argument:
+                onPressed: () => StateWidget.of(context).signInWithGoogle(),
               ),
             ],
-          ),         
+          ),
         ),
       ),
     );

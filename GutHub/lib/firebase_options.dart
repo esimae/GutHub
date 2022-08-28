@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBerNAt6aWAacnnZbVXsyFX8IWFcqcPDZA',
-    appId: '1:871500880528:web:7aa9692dac54b0b4ba1615',
-    messagingSenderId: '871500880528',
-    projectId: 'hack-334ed',
-    authDomain: 'hack-334ed.firebaseapp.com',
-    storageBucket: 'hack-334ed.appspot.com',
+    apiKey: 'AIzaSyAwnVBBxZNv7NKW8UZ6hss8iD7bIlYVoaw',
+    appId: '1:321003637945:web:94a3b85adad4089bfb9f68',
+    messagingSenderId: '321003637945',
+    projectId: 'my-cookbook-41741',
+    authDomain: 'my-cookbook-41741.firebaseapp.com',
+    storageBucket: 'my-cookbook-41741.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAIz7n4EEkfFgluxhPkLYCM8MdVsawnjE8',
-    appId: '1:871500880528:android:6cb24b75db620f85ba1615',
-    messagingSenderId: '871500880528',
-    projectId: 'hack-334ed',
-    storageBucket: 'hack-334ed.appspot.com',
+    apiKey: 'AIzaSyAau2SAnSKHF1FQB988_giZMvPO_pNfCiw',
+    appId: '1:321003637945:android:f9c0d00156b8711cfb9f68',
+    messagingSenderId: '321003637945',
+    projectId: 'my-cookbook-41741',
+    storageBucket: 'my-cookbook-41741.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAgBBKxOmpLGT0aFTNg4gRA9lHDfB-u9Uw',
-    appId: '1:871500880528:ios:bb9aa39e0ba7c41bba1615',
-    messagingSenderId: '871500880528',
-    projectId: 'hack-334ed',
-    storageBucket: 'hack-334ed.appspot.com',
-    iosClientId: '871500880528-7vlfkn042bra6o2rost81bo7h5ns8a8l.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCySIe5pxmLIIguWJ6bYF7AFWRnr9n8gR0',
+    appId: '1:321003637945:ios:54d854f95198db89fb9f68',
+    messagingSenderId: '321003637945',
+    projectId: 'my-cookbook-41741',
+    storageBucket: 'my-cookbook-41741.appspot.com',
+    iosClientId: '321003637945-rq2vu4adpco6bd1u6cubjo594n8a53mk.apps.googleusercontent.com',
     iosBundleId: 'com.example.cookbook',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAgBBKxOmpLGT0aFTNg4gRA9lHDfB-u9Uw',
-    appId: '1:871500880528:ios:bb9aa39e0ba7c41bba1615',
-    messagingSenderId: '871500880528',
-    projectId: 'hack-334ed',
-    storageBucket: 'hack-334ed.appspot.com',
-    iosClientId: '871500880528-7vlfkn042bra6o2rost81bo7h5ns8a8l.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCySIe5pxmLIIguWJ6bYF7AFWRnr9n8gR0',
+    appId: '1:321003637945:ios:54d854f95198db89fb9f68',
+    messagingSenderId: '321003637945',
+    projectId: 'my-cookbook-41741',
+    storageBucket: 'my-cookbook-41741.appspot.com',
+    iosClientId: '321003637945-rq2vu4adpco6bd1u6cubjo594n8a53mk.apps.googleusercontent.com',
     iosBundleId: 'com.example.cookbook',
   );
 }

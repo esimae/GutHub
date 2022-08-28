@@ -14,6 +14,7 @@ class Recipe {
   final String imageURL;
 
   const Recipe({
+    // required added as quickfix to all
     required this.id,
     required this.type,
     required this.name,
